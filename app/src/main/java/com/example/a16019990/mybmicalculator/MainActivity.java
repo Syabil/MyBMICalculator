@@ -81,6 +81,10 @@ public class MainActivity extends AppCompatActivity {
                 tvDate.setText(getString(R.string.tvDate));
                 tvMsg.setText(getString(R.string.tvMessage));
                 tvBMI.setText(getString(R.string.tvBMI));
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                SharedPreferences.Editor prefEdit = prefs.edit();
+                prefEdit.clear();
+                prefEdit.commit();
             }
         });
     }
