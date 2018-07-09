@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     String msg;
     String datetime;
-    double bmi;
+    float bmi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
                 //Prevents crashing when user presses the button even if the fields are empty
                 if (!etWeight.getText().toString().equals("") && !etHeight.getText().toString().equals("")) {
-                    double weight = Double.parseDouble(etWeight.getText().toString());
-                    double height = Double.parseDouble(etHeight.getText().toString());
+                    float weight = Float.parseFloat(etWeight.getText().toString() + "f");
+                    float height = Float.parseFloat(etHeight.getText().toString() + "f");
                     bmi = weight / (height * height);
 
                     if (bmi >= 30) {
