@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My BMI Calculator</string>
+    <string name="etWeight">Weight</string>
+    <string name="etHeight">Height</string>
+    <string name="btnCalculate">Calculate</string>
+    <string name="btnReset">Reset data</string>
+    <string name="tvDate">Last Calculated Date:</string>
+    <string name="tvBMI">Last Calculated BMI:</string>
+    <string name="tvMessage" />>
+</resources>
